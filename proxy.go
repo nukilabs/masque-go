@@ -5,13 +5,14 @@ import (
 	"io"
 	"log"
 	"net"
-	"net/http"
 	"sync"
 	"sync/atomic"
 
-	"github.com/quic-go/quic-go"
-	"github.com/quic-go/quic-go/http3"
-	"github.com/quic-go/quic-go/quicvarint"
+	"github.com/nukilabs/http"
+
+	"github.com/nukilabs/quic-go"
+	"github.com/nukilabs/quic-go/http3"
+	"github.com/nukilabs/quic-go/quicvarint"
 )
 
 const (

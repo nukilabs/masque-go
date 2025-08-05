@@ -2,21 +2,23 @@ package main
 
 import (
 	"context"
-	"crypto/tls"
 	"flag"
 	"fmt"
 	"io"
 	"log"
 	"net"
-	"net/http"
 	"net/url"
 	"os"
 	"strconv"
 
-	"github.com/quic-go/masque-go"
+	"github.com/nukilabs/http"
 
-	"github.com/quic-go/quic-go"
-	"github.com/quic-go/quic-go/http3"
+	tls "github.com/nukilabs/utls"
+
+	"github.com/nukilabs/masque-go"
+
+	"github.com/nukilabs/quic-go"
+	"github.com/nukilabs/quic-go/http3"
 	"github.com/yosida95/uritemplate/v3"
 )
 

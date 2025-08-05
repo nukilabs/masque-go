@@ -3,20 +3,22 @@ package masque_test
 import (
 	"bytes"
 	"context"
-	"crypto/tls"
 	"fmt"
 	"io"
 	"log"
 	"math/rand/v2"
 	"net"
-	"net/http"
 	"os"
 	"testing"
 	"time"
 
-	"github.com/quic-go/masque-go"
+	"github.com/nukilabs/http"
 
-	"github.com/quic-go/quic-go/http3"
+	tls "github.com/nukilabs/utls"
+
+	"github.com/nukilabs/masque-go"
+
+	"github.com/nukilabs/quic-go/http3"
 	"github.com/yosida95/uritemplate/v3"
 
 	"github.com/stretchr/testify/require"

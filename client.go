@@ -2,17 +2,19 @@ package masque
 
 import (
 	"context"
-	"crypto/tls"
 	"errors"
 	"fmt"
 	"net"
-	"net/http"
 	"net/url"
 	"strconv"
 	"sync"
 
-	"github.com/quic-go/quic-go"
-	"github.com/quic-go/quic-go/http3"
+	"github.com/nukilabs/http"
+
+	tls "github.com/nukilabs/utls"
+
+	"github.com/nukilabs/quic-go"
+	"github.com/nukilabs/quic-go/http3"
 	"github.com/yosida95/uritemplate/v3"
 )
 

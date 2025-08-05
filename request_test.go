@@ -2,13 +2,14 @@ package masque_test
 
 import (
 	"fmt"
-	"net/http"
 	"strings"
 	"testing"
 
+	"github.com/nukilabs/http"
+
 	"github.com/dunglas/httpsfv"
-	"github.com/quic-go/masque-go"
-	"github.com/quic-go/quic-go/http3"
+	"github.com/nukilabs/masque-go"
+	"github.com/nukilabs/quic-go/http3"
 	"github.com/yosida95/uritemplate/v3"
 
 	"github.com/stretchr/testify/require"

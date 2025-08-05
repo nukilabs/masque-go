@@ -2,14 +2,15 @@ package masque
 
 import (
 	"fmt"
-	"net/http"
 	"net/url"
 	"reflect"
 	"strconv"
 	"strings"
 
+	"github.com/nukilabs/http"
+
 	"github.com/dunglas/httpsfv"
-	"github.com/quic-go/quic-go/http3"
+	"github.com/nukilabs/quic-go/http3"
 	"github.com/yosida95/uritemplate/v3"
 )
 
