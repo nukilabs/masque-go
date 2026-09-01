@@ -182,8 +182,9 @@ func (c *proxiedConn) SetWriteDeadline(time.Time) error {
 }
 
 func skipCapsules(str quicvarint.Reader) error {
+	p := http3.NewCapsuleParser(str)
 	for {
-		ct, r, err := http3.ParseCapsule(str)
+		ct, r, err := p.Next()
 		if err != nil {
 			return err
 		}
